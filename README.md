@@ -73,9 +73,21 @@ roles/
 
 **依赖。**
 - 范本按 ZCode 写成，要用到它的后台 Agent 委派、SendMessage 双向通道和任务完成自动通知。别的宿主要有对应能力才能用。
-- 范本里提到的 `to-tickets`、`handoff`、`code-review` 三个 skill 不在本仓库里，需要另外准备，或者换成你自己的拆票、交接、审查方法。
+- 拆票、交接、审查用的是 [mattpocock/skills](https://github.com/mattpocock/skills) 里的三个 skill，本仓库不收录副本，请从上游安装：
+
+  | skill | loom 里谁用 | 上游位置 |
+  |---|---|---|
+  | `to-tickets` | 专家拆票 | [skills/engineering/to-tickets](https://github.com/mattpocock/skills/tree/main/skills/engineering/to-tickets) |
+  | `code-review` | 专家逐票审查、整单审查 | [skills/engineering/code-review](https://github.com/mattpocock/skills/tree/main/skills/engineering/code-review) |
+  | `handoff` | 主管写回报 | [skills/productivity/handoff](https://github.com/mattpocock/skills/tree/main/skills/productivity/handoff) |
+
+  安装方法见上游 README（整组以插件安装，或用 skills.sh 只拿需要的几个）。也可以换成你自己的拆票、交接、审查方法，`roles/expert.md` 里对拆票和审查的约束照样适用。
 
 ## 不适用
 
 - 单一的小任务：直接做更快。
 - 纯调研、讨论，没有施工。
+
+## 许可证
+
+[MIT](LICENSE)。引用的上游 skill 按它们自己的许可证（同为 MIT）。
