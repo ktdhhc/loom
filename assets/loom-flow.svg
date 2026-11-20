@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 780" width="880" height="780" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/>
+    </marker>
+  </defs>
+
+  <!-- canvas -->
+  <rect x="0" y="0" width="880" height="780" rx="14" fill="#ffffff"/>
+
+  <!-- lanes -->
+  <rect x="20"  y="10" width="180" height="680" fill="#f4f7fc"/>
+  <rect x="200" y="10" width="220" height="680" fill="#ffffff"/>
+  <rect x="420" y="10" width="220" height="680" fill="#f7f7f7"/>
+  <rect x="640" y="10" width="230" height="680" fill="#ffffff"/>
+  <g stroke="#d5d9e0" stroke-width="1">
+    <line x1="200" y1="10" x2="200" y2="690"/>
+    <line x1="420" y1="10" x2="420" y2="690"/>
+    <line x1="640" y1="10" x2="640" y2="690"/>
+    <line x1="20" y1="58" x2="870" y2="58"/>
+  </g>
+  <g text-anchor="middle" fill="#222">
+    <text x="110" y="34" font-size="16" font-weight="bold">你</text>
+    <text x="110" y="51" font-size="11" fill="#666">给需求、做决定</text>
+    <text x="310" y="34" font-size="16" font-weight="bold">任务主管</text>
+    <text x="310" y="51" font-size="11" fill="#666">ZCode 主会话</text>
+    <text x="530" y="34" font-size="16" font-weight="bold">工程专家</text>
+    <text x="530" y="51" font-size="11" fill="#666">子 agent</text>
+    <text x="755" y="34" font-size="16" font-weight="bold">执行</text>
+    <text x="755" y="51" font-size="11" fill="#666">子 agent，可同时开多个</text>
+  </g>
+
+  <!-- arrows -->
+  <g fill="none" stroke="#444" stroke-width="1.5" marker-end="url(#arr)">
+    <path d="M195,93 H223"/>
+    <path d="M310,116 V138"/>
+    <path d="M397,163 H443" marker-start="url(#arr)"/>
+    <path d="M310,186 V208"/>
+    <path d="M395,233 H750 V270"/>
+    <path d="M665,303 H617"/>
+    <path d="M445,310 H310 V348"/>
+    <path d="M395,385 H750 V418"/>
+    <path d="M665,443 H310 V488"/>
+    <path d="M225,513 H110 V558"/>
+    <path d="M110,606 V628"/>
+  </g>
+  <g fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrRed)">
+    <path d="M395,362 H852 V303 H838"/>
+  </g>
+  <g font-size="11" fill="#666" text-anchor="middle">
+    <text x="572" y="227">并行派单，一票一个实例</text>
+    <text x="641" y="297">提交</text>
+    <text x="378" y="304">审查结论</text>
+    <text x="600" y="380">派验收</text>
+    <text x="488" y="437">原始证据</text>
+    <text x="168" y="507">写回</text>
+  </g>
+  <g font-size="11" fill="#c0392b" text-anchor="middle">
+    <text x="600" y="354">打回：返工或换人</text>
+  </g>
+
+  <!-- input / output documents -->
+  <g fill="#e8f0fe" stroke="#3b6fd8" stroke-width="1.5">
+    <path d="M25,70 H180 L195,85 V116 H25 Z"/>
+    <path d="M25,560 H180 L195,575 V606 H25 Z"/>
+  </g>
+  <g fill="none" stroke="#3b6fd8" stroke-width="1.2">
+    <path d="M180,70 V85 H195"/>
+    <path d="M180,560 V575 H195"/>
+  </g>
+
+  <!-- needs you -->
+  <rect x="25" y="630" width="170" height="46" rx="8" fill="#fff4e0" stroke="#d08a1a" stroke-width="1.5"/>
+
+  <!-- environment -->
+  <rect x="225" y="210" width="170" height="46" rx="8" fill="#eceff1" stroke="#90a4ae" stroke-width="1.5"/>
+
+  <!-- agent work -->
+  <g fill="#ffffff" stroke="#333" stroke-width="1.5">
+    <rect x="225" y="70"  width="170" height="46" rx="8"/>
+    <rect x="225" y="140" width="170" height="46" rx="8"/>
+    <rect x="445" y="140" width="170" height="46" rx="8"/>
+    <rect x="673" y="272" width="170" height="46" rx="8"/>
+    <rect x="669" y="276" width="170" height="46" rx="8"/>
+    <rect x="665" y="280" width="170" height="46" rx="8"/>
+    <rect x="445" y="280" width="170" height="46" rx="8"/>
+    <rect x="225" y="350" width="170" height="46" rx="8"/>
+    <rect x="665" y="420" width="170" height="46" rx="8"/>
+    <rect x="225" y="490" width="170" height="46" rx="8"/>
+  </g>
+
+  <!-- labels -->
+  <g font-size="13" fill="#222" text-anchor="middle">
+    <text x="105" y="98" fill="#1f4fa8" font-weight="bold">任务文档</text>
+    <text x="310" y="98">读文档，核查现场</text>
+    <text x="310" y="168">逐票确认，给意见</text>
+    <text x="530" y="168">拆票：起草并写入</text>
+    <text x="310" y="238" fill="#455a64">准备环境：工作树、端口</text>
+    <text x="750" y="308">施工、自测</text>
+    <text x="530" y="301">审查</text>
+    <text x="530" y="317" font-size="10" fill="#777">逐票审 + 最后整单审</text>
+    <text x="310" y="371">裁决每张票</text>
+    <text x="310" y="387" font-size="10" fill="#777">通过 / 返工 / 换人 / 停下待决定</text>
+    <text x="750" y="442">跑验收，只交证据</text>
+    <text x="750" y="458" font-size="10" fill="#777">换一个没碰过代码的实例</text>
+    <text x="310" y="518">判断验收，写回报</text>
+    <text x="105" y="581" fill="#1f4fa8" font-weight="bold">回报 + 各票的分支</text>
+    <text x="105" y="597" font-size="10" fill="#1f4fa8">每票标「可合并」或「待决定」</text>
+    <text x="110" y="651" fill="#8a5a00">回答「需要决定」</text>
+    <text x="110" y="667" fill="#8a5a00">验收、合并</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="12" fill="#333">
+    <path d="M30,712 H52 L60,720 V734 H30 Z" fill="#e8f0fe" stroke="#3b6fd8" stroke-width="1.2"/>
+    <text x="68" y="728">输入 / 输出</text>
+    <rect x="170" y="712" width="30" height="22" rx="5" fill="#fff" stroke="#333" stroke-width="1.2"/>
+    <text x="208" y="728">agent 的工作</text>
+    <rect x="320" y="712" width="30" height="22" rx="5" fill="#eceff1" stroke="#90a4ae" stroke-width="1.2"/>
+    <text x="358" y="728">环境准备</text>
+    <rect x="450" y="712" width="30" height="22" rx="5" fill="#fff4e0" stroke="#d08a1a" stroke-width="1.2"/>
+    <text x="488" y="728">轮到你</text>
+    <line x1="570" y1="723" x2="606" y2="723" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+    <text x="614" y="728">交接</text>
+    <line x1="670" y1="723" x2="706" y2="723" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrRed)"/>
+    <text x="714" y="728">打回返工</text>
+    <text x="30" y="762" font-size="11" fill="#777">从上往下读：每一行是一步，所在的列就是谁来做。途中冒出的「需要决定」不打断流程，统一写进回报。</text>
+  </g>
+</svg>
